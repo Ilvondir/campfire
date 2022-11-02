@@ -17,22 +17,20 @@ body {
 .firewood {
     position: absolute;
     bottom: 0;
+    width: 10vmin;
+    border-radius: 4vmin;
 }
 
 .firewood:nth-child(1) {
     background-color: #5F1F00;
-    width: 10vmin;
     height: 25vmin;
-    border-radius: 4vmin;
     left: 15vmin;
     transform: rotate(50deg);
 }
 
 .firewood:nth-child(2) {
     background-color: #361300;
-    width: 10vmin;
     height: 30vmin;
-    border-radius: 4vmin;
     left: 35vmin;
     bottom: -3vmin;
     transform: rotate(-60deg);
@@ -40,9 +38,7 @@ body {
 
 .firewood:nth-child(3) {
     background-color: #710004;
-    width: 10vmin;
     height: 22vmin;
-    border-radius: 4vmin;
     left: 25vmin;
     transform: rotate(-5deg);
 }
