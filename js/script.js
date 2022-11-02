@@ -1,15 +1,13 @@
-const container = document.querySelector('.container');
-
 for (i=0;i<3;i++) {
     const firewood = document.createElement('div');
     firewood.classList.add('firewood');
-    container.appendChild(firewood);
+    $(".container").append(firewood);
 }
 
 
 const fire = document.createElement('div');
 fire.classList.add('fire');
-container.appendChild(fire);
+$(".container").append(fire);
 
 
 for (let i=0;i<12;i++) {
@@ -18,7 +16,7 @@ for (let i=0;i<12;i++) {
     let name = "flame" + (i+1);
 
     flame.classList.add(name);
-    container.appendChild(flame);
+    $(".container").append(flame);
 }
 
 function burning() {
