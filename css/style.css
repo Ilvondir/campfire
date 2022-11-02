@@ -62,62 +62,62 @@ body {
     position: absolute;
 }
 
-.flame:nth-child(1) {
-    background-color: yellow;
-    left: 19vmin;
-}
-
-.flame:nth-child(2) {
-    left: 24vmin;
-    background-color: yellow;
-}
-
-.flame:nth-child(3) {
-    left: 29vmin;
-    background-color: yellow;
-}
-
-.flame:nth-child(4) {
-    background-color: orange;
-    left: 19vmin;
-}
-
 .flame:nth-child(5) {
-    left: 24vmin;
-    background-color: orange;
+    background-color: yellow;
+    left: 19vmin;
 }
 
 .flame:nth-child(6) {
-    left: 29vmin;
-    background-color: orange;
+    left: 24vmin;
+    background-color: yellow;
 }
 
 .flame:nth-child(7) {
-    background-color: red;
-    left: 19vmin;
+    left: 29vmin;
+    background-color: yellow;
 }
 
 .flame:nth-child(8) {
-    left: 24vmin;
-    background-color: red;
-}
-
-.flame:nth-child(9) {
-    left: 29vmin;
-    background-color: red;
-}
-
-.flame:nth-child(10) {
-    background-color: red;
+    background-color: orange;
     left: 19vmin;
 }
 
-.flame:nth-child(11) {
+.flame:nth-child(9) {
     left: 24vmin;
     background-color: orange;
 }
 
+.flame:nth-child(10) {
+    left: 29vmin;
+    background-color: orange;
+}
+
+.flame:nth-child(11) {
+    background-color: red;
+    left: 19vmin;
+}
+
 .flame:nth-child(12) {
+    left: 24vmin;
+    background-color: red;
+}
+
+.flame:nth-child(13) {
+    left: 29vmin;
+    background-color: red;
+}
+
+.flame:nth-child(14) {
+    background-color: red;
+    left: 19vmin;
+}
+
+.flame:nth-child(15) {
+    left: 24vmin;
+    background-color: orange;
+}
+
+.flame:nth-child(16) {
     left: 29vmin;
     background-color: yellow;
 }

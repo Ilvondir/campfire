@@ -29,7 +29,7 @@ function burning() {
 
 function animation() {
     anime({
-        targets: ".flame:nth-child(1), .flame:nth-child(5), .flame:nth-child(9)",
+        targets: ".flame:nth-child(5), .flame:nth-child(9), .flame:nth-child(13)",
         opacity: [1,0],
         translateY: [0,-70],
         rotate: [0, function() {
@@ -48,7 +48,7 @@ function animation() {
 
 function animation2() {
     anime({
-        targets: ".flame:nth-child(2), .flame:nth-child(6), .flame:nth-child(7)",
+        targets: ".flame:nth-child(6), .flame:nth-child(10), .flame:nth-child(11)",
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -67,7 +67,7 @@ function animation2() {
 
 function animation3() {
     anime({
-        targets: ".flame:nth-child(3), .flame:nth-child(4), .flame:nth-child(8)",
+        targets: ".flame:nth-child(7), .flame:nth-child(8), .flame:nth-child(12)",
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -86,7 +86,7 @@ function animation3() {
 
 function animation4() {
     anime({
-        targets: ".flame:nth-child(10), .flame:nth-child(11), .flame:nth-child(12)",
+        targets: ".flame:nth-child(14), .flame:nth-child(15), .flame:nth-child(16)",
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
