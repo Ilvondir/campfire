@@ -17,22 +17,20 @@ body {
 .firewood {
     position: absolute;
     bottom: 0;
+    width: 10vmin;
+    border-radius: 4vmin;
 }
 
 .firewood:nth-child(1) {
     background-color: #5F1F00;
-    width: 10vmin;
     height: 25vmin;
-    border-radius: 4vmin;
     left: 15vmin;
     transform: rotate(50deg);
 }
 
 .firewood:nth-child(2) {
     background-color: #361300;
-    width: 10vmin;
     height: 30vmin;
-    border-radius: 4vmin;
     left: 35vmin;
     bottom: -3vmin;
     transform: rotate(-60deg);
@@ -40,9 +38,7 @@ body {
 
 .firewood:nth-child(3) {
     background-color: #710004;
-    width: 10vmin;
     height: 22vmin;
-    border-radius: 4vmin;
     left: 25vmin;
     transform: rotate(-5deg);
 }
@@ -58,122 +54,70 @@ body {
     z-index: 1000;
 }
 
-.flame1 {
-    background-color: yellow;
+.flame {
     width: 10vmin;
     height: 6vmin;
     border-radius: 4vmin;
-    left: 19vmin;
     bottom: 23vmin;
     position: absolute;
 }
 
-.flame2 {
+.flame:nth-child(5) {
+    background-color: yellow;
+    left: 19vmin;
+}
+
+.flame:nth-child(6) {
     left: 24vmin;
     background-color: yellow;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame3 {
+.flame:nth-child(7) {
     left: 29vmin;
     background-color: yellow;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame4 {
+.flame:nth-child(8) {
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
     left: 19vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame5 {
+.flame:nth-child(9) {
     left: 24vmin;
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame6 {
+.flame:nth-child(10) {
     left: 29vmin;
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame7 {
+.flame:nth-child(11) {
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
     left: 19vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame8 {
+.flame:nth-child(12) {
     left: 24vmin;
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame9 {
+.flame:nth-child(13) {
     left: 29vmin;
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame10 {
+.flame:nth-child(14) {
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
     left: 19vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame11 {
+.flame:nth-child(15) {
     left: 24vmin;
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame12 {
+.flame:nth-child(16) {
     left: 29vmin;
     background-color: yellow;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
