@@ -1,79 +1,79 @@
-const ognisko = document.querySelector('.ognisko');
+const ognisko = document.querySelector('.container');
 
 for (i=0;i<3;i++) {
-    const drwa = document.createElement('div');
-    drwa.classList.add('drwo');
-    ognisko.appendChild(drwa);
+    const firewood = document.createElement('div');
+    firewood.classList.add('firewood');
+    ognisko.appendChild(firewood);
 }
 
 
-const ogien = document.createElement('div');
-ogien.classList.add('ogien');
-ognisko.appendChild(ogien);
+const fire = document.createElement('div');
+fire.classList.add('fire');
+ognisko.appendChild(fire);
 
 
-const plomien1 = document.createElement('div');
-plomien1.classList.add('plomien1');
-ognisko.appendChild(plomien1);
+const flame1 = document.createElement('div');
+flame1.classList.add('flame1');
+ognisko.appendChild(flame1);
 
-const plomien2 = document.createElement('div');
-plomien2.classList.add('plomien2');
-ognisko.appendChild(plomien2);
+const flame2 = document.createElement('div');
+flame2.classList.add('flame2');
+ognisko.appendChild(flame2);
 
-const plomien3 = document.createElement('div');
-plomien3.classList.add('plomien3');
-ognisko.appendChild(plomien3);
+const flame3 = document.createElement('div');
+flame3.classList.add('flame3');
+ognisko.appendChild(flame3);
 
-const plomien4 = document.createElement('div');
-plomien4.classList.add('plomien4');
-ognisko.appendChild(plomien4);
+const flame4 = document.createElement('div');
+flame4.classList.add('flame4');
+ognisko.appendChild(flame4);
 
-const plomien5 = document.createElement('div');
-plomien5.classList.add('plomien5');
-ognisko.appendChild(plomien5);
+const flame5 = document.createElement('div');
+flame5.classList.add('flame5');
+ognisko.appendChild(flame5);
 
-const plomien6 = document.createElement('div');
-plomien6.classList.add('plomien6');
-ognisko.appendChild(plomien6);
+const flame6 = document.createElement('div');
+flame6.classList.add('flame6');
+ognisko.appendChild(flame6);
 
-const plomien7 = document.createElement('div');
-plomien7.classList.add('plomien7');
-ognisko.appendChild(plomien7);
+const flame7 = document.createElement('div');
+flame7.classList.add('flame7');
+ognisko.appendChild(flame7);
 
-const plomien8 = document.createElement('div');
-plomien8.classList.add('plomien8');
-ognisko.appendChild(plomien8);
+const flame8 = document.createElement('div');
+flame8.classList.add('flame8');
+ognisko.appendChild(flame8);
 
-const plomien9 = document.createElement('div');
-plomien9.classList.add('plomien9');
-ognisko.appendChild(plomien9);
+const flame9 = document.createElement('div');
+flame9.classList.add('flame9');
+ognisko.appendChild(flame9);
 
-const plomien10 = document.createElement('div');
-plomien10.classList.add('plomien10');
-ognisko.appendChild(plomien10);
+const flame10 = document.createElement('div');
+flame10.classList.add('flame10');
+ognisko.appendChild(flame10);
 
-const plomien11 = document.createElement('div');
-plomien11.classList.add('plomien11');
-ognisko.appendChild(plomien11);
+const flame11 = document.createElement('div');
+flame11.classList.add('flame11');
+ognisko.appendChild(flame11);
 
-const plomien12 = document.createElement('div');
-plomien12.classList.add('plomien12');
-ognisko.appendChild(plomien12);
+const flame12 = document.createElement('div');
+flame12.classList.add('flame12');
+ognisko.appendChild(flame12);
 
-function fire() {
+function burning() {
     anime({
-        targets: '.ogien',
+        targets: '.fire',
         scale: 1.1,
         direction: 'alternate',
         easing: 'linear',
         duration: 300,
-        complete: fire,
+        complete: burning,
     })
 }
 
-function animacja() {
+function animation() {
     anime({
-        targets: '.plomien1, .plomien5, .plomien9',
+        targets: '.flame1, .flame5, .flame9',
         opacity: [1,0],
         translateY: [0,-70],
         rotate: [0, function() {
@@ -86,13 +86,13 @@ function animacja() {
         duration: 750,
         easing: 'linear',
         delay: anime.stagger(80),
-        complete: animacja,
+        complete: animation,
     })
 }
 
-function animacja2() {
+function animation2() {
     anime({
-        targets: '.plomien2, .plomien6, .plomien7',
+        targets: '.flame2, .flame6, .flame7',
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -105,13 +105,13 @@ function animacja2() {
         duration: 750,
         easing: 'linear',
         delay: anime.stagger(150),
-        complete: animacja2,
+        complete: animation2,
     })
 }
 
-function animacja3() {
+function animation3() {
     anime({
-        targets: '.plomien3, .plomien4, .plomien8',
+        targets: '.flame3, .flame4, .flame8',
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -124,13 +124,13 @@ function animacja3() {
         duration: 750,
         easing: 'linear',
         delay: anime.stagger(260),
-        complete: animacja3,
+        complete: animation3,
     })
 }
 
-function animacja4() {
+function animation4() {
     anime({
-        targets: '.plomien10, .plomien11, .plomien12',
+        targets: '.flame10, .flame11, .flame12',
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -143,12 +143,12 @@ function animacja4() {
         duration: 550,
         easing: 'linear',
         delay: 1,
-        complete: animacja4,
+        complete: animation4,
     })
 }
 
-fire();
-animacja();
-animacja2();
-animacja3();
-animacja4();
+burning();
+animation();
+animation2();
+animation3();
+animation4();
