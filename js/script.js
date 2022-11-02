@@ -1,12 +1,12 @@
 for (i=0;i<3;i++) {
     const firewood = document.createElement('div');
-    firewood.classList.add('firewood');
+    $(firewood).addClass('firewood');
     $(".container").append(firewood);
 }
 
 
 const fire = document.createElement('div');
-fire.classList.add('fire');
+$(fire).addClass('fire');
 $(".container").append(fire);
 
 
@@ -15,7 +15,7 @@ for (let i=0;i<12;i++) {
 
     let name = "flame" + (i+1);
 
-    flame.classList.add(name);
+    $(flame).addClass(name);
     $(".container").append(flame);
 }
 
