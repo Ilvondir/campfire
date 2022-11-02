@@ -54,122 +54,70 @@ body {
     z-index: 1000;
 }
 
-.flame1 {
-    background-color: yellow;
+.flame {
     width: 10vmin;
     height: 6vmin;
     border-radius: 4vmin;
-    left: 19vmin;
     bottom: 23vmin;
     position: absolute;
 }
 
-.flame2 {
+.flame:nth-child(1) {
+    background-color: yellow;
+    left: 19vmin;
+}
+
+.flame:nth-child(2) {
     left: 24vmin;
     background-color: yellow;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame3 {
+.flame:nth-child(3) {
     left: 29vmin;
     background-color: yellow;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame4 {
+.flame:nth-child(4) {
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
     left: 19vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame5 {
+.flame:nth-child(5) {
     left: 24vmin;
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame6 {
+.flame:nth-child(6) {
     left: 29vmin;
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame7 {
+.flame:nth-child(7) {
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
     left: 19vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame8 {
+.flame:nth-child(8) {
     left: 24vmin;
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame9 {
+.flame:nth-child(9) {
     left: 29vmin;
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame10 {
+.flame:nth-child(10) {
     background-color: red;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
     left: 19vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame11 {
+.flame:nth-child(11) {
     left: 24vmin;
     background-color: orange;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
 
-.flame12 {
+.flame:nth-child(12) {
     left: 29vmin;
     background-color: yellow;
-    width: 10vmin;
-    height: 6vmin;
-    border-radius: 4vmin;
-    bottom: 23vmin;
-    position: absolute;
 }
