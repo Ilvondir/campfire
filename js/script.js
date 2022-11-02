@@ -1,79 +1,40 @@
-const ognisko = document.querySelector('.ognisko');
+const container = document.querySelector('.container');
 
 for (i=0;i<3;i++) {
-    const drwa = document.createElement('div');
-    drwa.classList.add('drwo');
-    ognisko.appendChild(drwa);
+    const firewood = document.createElement('div');
+    firewood.classList.add('firewood');
+    container.appendChild(firewood);
 }
 
 
-const ogien = document.createElement('div');
-ogien.classList.add('ogien');
-ognisko.appendChild(ogien);
+const fire = document.createElement('div');
+fire.classList.add('fire');
+container.appendChild(fire);
 
 
-const plomien1 = document.createElement('div');
-plomien1.classList.add('plomien1');
-ognisko.appendChild(plomien1);
+for (let i=0;i<12;i++) {
+    const flame = document.createElement('div');
 
-const plomien2 = document.createElement('div');
-plomien2.classList.add('plomien2');
-ognisko.appendChild(plomien2);
+    let name = "flame" + (i+1);
 
-const plomien3 = document.createElement('div');
-plomien3.classList.add('plomien3');
-ognisko.appendChild(plomien3);
+    flame.classList.add(name);
+    container.appendChild(flame);
+}
 
-const plomien4 = document.createElement('div');
-plomien4.classList.add('plomien4');
-ognisko.appendChild(plomien4);
-
-const plomien5 = document.createElement('div');
-plomien5.classList.add('plomien5');
-ognisko.appendChild(plomien5);
-
-const plomien6 = document.createElement('div');
-plomien6.classList.add('plomien6');
-ognisko.appendChild(plomien6);
-
-const plomien7 = document.createElement('div');
-plomien7.classList.add('plomien7');
-ognisko.appendChild(plomien7);
-
-const plomien8 = document.createElement('div');
-plomien8.classList.add('plomien8');
-ognisko.appendChild(plomien8);
-
-const plomien9 = document.createElement('div');
-plomien9.classList.add('plomien9');
-ognisko.appendChild(plomien9);
-
-const plomien10 = document.createElement('div');
-plomien10.classList.add('plomien10');
-ognisko.appendChild(plomien10);
-
-const plomien11 = document.createElement('div');
-plomien11.classList.add('plomien11');
-ognisko.appendChild(plomien11);
-
-const plomien12 = document.createElement('div');
-plomien12.classList.add('plomien12');
-ognisko.appendChild(plomien12);
-
-function fire() {
+function burning() {
     anime({
-        targets: '.ogien',
+        targets: '.fire',
         scale: 1.1,
         direction: 'alternate',
         easing: 'linear',
         duration: 300,
-        complete: fire,
+        complete: burning,
     })
 }
 
-function animacja() {
+function animation() {
     anime({
-        targets: '.plomien1, .plomien5, .plomien9',
+        targets: '.flame1, .flame5, .flame9',
         opacity: [1,0],
         translateY: [0,-70],
         rotate: [0, function() {
@@ -86,13 +47,13 @@ function animacja() {
         duration: 750,
         easing: 'linear',
         delay: anime.stagger(80),
-        complete: animacja,
+        complete: animation,
     })
 }
 
-function animacja2() {
+function animation2() {
     anime({
-        targets: '.plomien2, .plomien6, .plomien7',
+        targets: '.flame2, .flame6, .flame7',
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -105,13 +66,13 @@ function animacja2() {
         duration: 750,
         easing: 'linear',
         delay: anime.stagger(150),
-        complete: animacja2,
+        complete: animation2,
     })
 }
 
-function animacja3() {
+function animation3() {
     anime({
-        targets: '.plomien3, .plomien4, .plomien8',
+        targets: '.flame3, .flame4, .flame8',
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -124,13 +85,13 @@ function animacja3() {
         duration: 750,
         easing: 'linear',
         delay: anime.stagger(260),
-        complete: animacja3,
+        complete: animation3,
     })
 }
 
-function animacja4() {
+function animation4() {
     anime({
-        targets: '.plomien10, .plomien11, .plomien12',
+        targets: '.flame10, .flame11, .flame12',
         opacity: [1,0],
         translateY: [0,-70],
         translateX: [0,function() {
@@ -143,12 +104,12 @@ function animacja4() {
         duration: 550,
         easing: 'linear',
         delay: 1,
-        complete: animacja4,
+        complete: animation4,
     })
 }
 
-fire();
-animacja();
-animacja2();
-animacja3();
-animacja4();
+burning();
+animation();
+animation2();
+animation3();
+animation4();
