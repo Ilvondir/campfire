@@ -1,0 +1,179 @@
+body {
+    background-color: #BD9460;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ognisko {
+    position: absolute;
+    height: 50vh;
+    width: 60vmin;
+}
+
+.drwo {
+    position: absolute;
+    bottom: 0;
+}
+
+.drwo:nth-child(1) {
+    background-color: #5F1F00;
+    width: 10vmin;
+    height: 25vmin;
+    border-radius: 4vmin;
+    left: 15vmin;
+    transform: rotate(50deg);
+}
+
+.drwo:nth-child(2) {
+    background-color: #361300;
+    width: 10vmin;
+    height: 30vmin;
+    border-radius: 4vmin;
+    left: 35vmin;
+    bottom: -3vmin;
+    transform: rotate(-60deg);
+}
+
+.drwo:nth-child(3) {
+    background-color: #710004;
+    width: 10vmin;
+    height: 22vmin;
+    border-radius: 4vmin;
+    left: 25vmin;
+    transform: rotate(-5deg);
+}
+
+.ogien {
+    background-color: red;
+    width: 21vmin;
+    height: 14vmin;
+    border-radius: 4vmin;
+    left: 19vmin;
+    bottom: 15vmin;
+    position: absolute;
+    z-index: 1000;
+}
+
+.plomien1 {
+    background-color: yellow;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    left: 19vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien2 {
+    left: 24vmin;
+    background-color: yellow;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien3 {
+    left: 29vmin;
+    background-color: yellow;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien4 {
+    background-color: orange;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    left: 19vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien5 {
+    left: 24vmin;
+    background-color: orange;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien6 {
+    left: 29vmin;
+    background-color: orange;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien7 {
+    background-color: red;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    left: 19vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien8 {
+    left: 24vmin;
+    background-color: red;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien9 {
+    left: 29vmin;
+    background-color: red;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien10 {
+    background-color: red;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    left: 19vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien11 {
+    left: 24vmin;
+    background-color: orange;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
+
+.plomien12 {
+    left: 29vmin;
+    background-color: yellow;
+    width: 10vmin;
+    height: 6vmin;
+    border-radius: 4vmin;
+    bottom: 23vmin;
+    position: absolute;
+}
