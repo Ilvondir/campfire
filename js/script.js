@@ -16,6 +16,10 @@ for (let i=0;i<12;i++) {
     $(".container").append(flame);
 }
 
+const ground = document.createElement("div");
+$(ground).addClass("ground");
+$("body").append(ground);
+
 function burning() {
     anime({
         targets: ".fire",
