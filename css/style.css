@@ -12,6 +12,7 @@ body {
     position: absolute;
     height: 50vh;
     width: 60vmin;
+    z-index: 1000;
 }
 
 .firewood {
@@ -44,7 +45,7 @@ body {
 }
 
 .fire {
-    background-color: red;
+    background-color: orange;
     width: 21vmin;
     height: 14vmin;
     border-radius: 4vmin;
@@ -58,7 +59,7 @@ body {
     width: 10vmin;
     height: 6vmin;
     border-radius: 4vmin;
-    bottom: 23vmin;
+    bottom: 20vmin;
     position: absolute;
 }
 
@@ -120,4 +121,13 @@ body {
 .flame:nth-child(16) {
     left: 29vmin;
     background-color: yellow;
+}
+
+.ground {
+    width: 100vw;
+    height: 36vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    background-color: darkgreen;
 }
