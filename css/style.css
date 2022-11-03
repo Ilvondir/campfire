@@ -44,7 +44,7 @@ body {
 }
 
 .fire {
-    background-color: red;
+    background-color: orange;
     width: 21vmin;
     height: 14vmin;
     border-radius: 4vmin;
@@ -58,7 +58,7 @@ body {
     width: 10vmin;
     height: 6vmin;
     border-radius: 4vmin;
-    bottom: 23vmin;
+    bottom: 20vmin;
     position: absolute;
 }
 
