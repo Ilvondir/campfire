@@ -35,7 +35,7 @@ function burning() {
 function animation() {
     anime({
         targets: ".flame:nth-child(5), .flame:nth-child(9), .flame:nth-child(13)",
-        opacity: [1,0],
+        opacity: [1, 0.6, 0],
         translateY: [0,-150],
         rotate: [0, function() {
             return anime.random(-360,360);
@@ -54,7 +54,7 @@ function animation() {
 function animation2() {
     anime({
         targets: ".flame:nth-child(6), .flame:nth-child(10), .flame:nth-child(11)",
-        opacity: [1,0],
+        opacity: [1, 0.6, 0],
         translateY: [0,-150],
         translateX: [0,function() {
             return anime.random(-60,60);
@@ -73,7 +73,7 @@ function animation2() {
 function animation3() {
     anime({
         targets: ".flame:nth-child(7), .flame:nth-child(8), .flame:nth-child(12)",
-        opacity: [1,0],
+        opacity: [1, 0.6, 0],
         translateY: [0,-150],
         translateX: [0,function() {
             return anime.random(-60,60);
@@ -92,7 +92,7 @@ function animation3() {
 function animation4() {
     anime({
         targets: ".flame:nth-child(14), .flame:nth-child(15), .flame:nth-child(16)",
-        opacity: [1,0],
+        opacity: [1, 0.6, 0],
         translateY: [0,-150],
         translateX: [0,function() {
             return anime.random(-60,60);
@@ -113,3 +113,14 @@ animation();
 animation2();
 animation3();
 animation4();
+
+$("<audio></audio").attr({
+    "src": "audio/fire.mp3",
+    "loop": "loop",
+    "id": "sound",
+    "volume": 0.4
+}).appendTo("body");
+
+$("body").on("click", function () {
+    $("#sound")[0].play();
+})
