@@ -18,11 +18,11 @@ body {
 
 .sun {
     position: absolute;
-    height: 50vmin;
-    width: 50vmin;
+    height: 60vmin;
+    width: 60vmin;
     border-radius: 50%;
-    top: -25vmin;
-    right: -25vmin;
+    top: -30vmin;
+    right: -30vmin;
     background-color: yellow;
 }
 
