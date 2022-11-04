@@ -33,6 +33,10 @@ for (let i=0;i<12;i++) {
     $(".container").append(flame);
 }
 
+const glow = document.createElement("div");
+$(glow).addClass("glow");
+$(".container").append(glow);
+
 const ground = document.createElement("div");
 $(ground).addClass("ground");
 $("body").append(ground);
@@ -158,6 +162,7 @@ function setOn() {
     $("body").css("background-color", "darkblue");
     $(".ground").css("background-color", "darkgreen");
     $(".sun").css("background-color", "#FEFCD7");
+    $(".glow").css("display", "block");
 
     $("#button").off("click",setOn);
     $("#button").on("click",setOff);
@@ -178,9 +183,19 @@ function setOff() {
     $("body").css("background-color", "lightblue");
     $(".ground").css("background-color", "green");
     $(".sun").css("background-color", "yellow");
+    $(".glow").css("display", "none");
 
     $("#button").off("click",setOff);
     $("#button").on("click",setOn);
 }
 
 $("#button").on("click",setOn);
+
+anime({
+    targets: ".glow",
+    scale: [1.5, 1.6],
+    duration: 1000,
+    easing: "linear",
+    loop: true,
+    direction: "alternate"
+})
