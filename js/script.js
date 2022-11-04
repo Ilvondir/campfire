@@ -1,3 +1,7 @@
+const sun = document.createElement("div");
+$(sun).addClass("sun");
+$("body").append(sun);
+
 for (i=0;i<3;i++) {
     const firewood = document.createElement("div");
     $(firewood).addClass("firewood");
