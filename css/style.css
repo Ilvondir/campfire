@@ -9,11 +9,33 @@ body {
     overflow: hidden;
 }
 
-.container {
+.buttonDiv {
     position: absolute;
-    height: 50vh;
-    width: 60vmin;
-    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 14vmin;
+    height: 8vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 10vmin;
+    height: 4vmin;
+    background-color: #FFFFFF;
+    border-radius: 2vmin;
+}
+
+.circle {
+    position: relative;
+    top: 0.5vmin;
+    left: 0.5vmin;
+    width: 3vmin;
+    height: 3vmin;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0 0 1vmin #888888;
 }
 
 .sun {
@@ -24,6 +46,13 @@ body {
     top: -30vmin;
     right: -30vmin;
     background-color: yellow;
+}
+
+.container {
+    position: absolute;
+    height: 50vh;
+    width: 60vmin;
+    z-index: 1000;
 }
 
 .firewood {

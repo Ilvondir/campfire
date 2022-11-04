@@ -1,3 +1,15 @@
+const buttonDiv = document.createElement("div");
+$(buttonDiv).addClass("buttonDiv");
+$("body").append(buttonDiv);
+
+const button = document.createElement("div");
+$(button).addClass("button");
+$(".buttonDiv").append(button);
+
+const circle = document.createElement("div");
+$(circle).addClass("circle");
+$(".button").append(circle);
+
 const sun = document.createElement("div");
 $(sun).addClass("sun");
 $("body").append(sun);
@@ -122,7 +134,6 @@ $("<audio></audio").attr({
     "src": "audio/fire.mp3",
     "loop": "loop",
     "id": "sound",
-    "volume": 0.4
 }).appendTo("body");
 
 $("body").on("click", function () {
