@@ -3,12 +3,13 @@ $(buttonDiv).addClass("buttonDiv");
 $("body").append(buttonDiv);
 
 const button = document.createElement("div");
-$(button).addClass("button");
+$(button).addClass("offButton");
+$(button).attr("id", "button")
 $(".buttonDiv").append(button);
 
 const circle = document.createElement("div");
 $(circle).addClass("circle");
-$(".button").append(circle);
+$(".offButton").append(circle);
 
 const sun = document.createElement("div");
 $(sun).addClass("sun");
@@ -139,3 +140,47 @@ $("<audio></audio").attr({
 $("body").on("click", function () {
     $("#sound")[0].play();
 })
+
+function setOn() {
+    anime({
+        targets: ".circle",
+        easing: "linear",
+        translateX: function () {
+            return 6 + "vmin";
+        },
+        duration: 150,
+    });
+
+    $("#button").css("background-color", "#555555");
+    $("#button").removeClass("offButton");
+    $("#button").addClass("onButton");
+    $(".circle").css("background-color", "#777777");
+    $("body").css("background-color", "darkblue");
+    $(".ground").css("background-color", "darkgreen");
+    $(".sun").css("background-color", "#FEFCD7");
+
+    $("#button").off("click",setOn);
+    $("#button").on("click",setOff);
+}
+
+function setOff() {
+    anime({
+        targets: ".circle",
+        easing: "linear",
+        translateX: 0,
+        duration: 150,
+    });
+
+    $("#button").css("background-color", "white");
+    $("#button").removeClass("onButton");
+    $("#button").addClass("offButton");
+    $(".circle").css("background-color", "white");
+    $("body").css("background-color", "lightblue");
+    $(".ground").css("background-color", "green");
+    $(".sun").css("background-color", "yellow");
+
+    $("#button").off("click",setOff);
+    $("#button").on("click",setOn);
+}
+
+$("#button").on("click",setOn);

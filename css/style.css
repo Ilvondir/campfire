@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 
-.button {
+.offButton, .onButton {
     width: 10vmin;
     height: 4vmin;
     background-color: #FFFFFF;
