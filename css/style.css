@@ -40,11 +40,11 @@ body {
 
 .sun {
     position: absolute;
-    height: 60vmin;
-    width: 60vmin;
-    border-radius: 50%;
-    top: -30vmin;
-    right: -30vmin;
+    height: 30vmin;
+    width: 30vmin;
+    border-bottom-left-radius: 100%;
+    top: 0vmin;
+    right: 0vmin;
     background-color: yellow;
 }
 
