@@ -9,7 +9,7 @@ Website presenting an animation of a burning fire. Anime.js and JQuery were used
 - Anime.js 3.0.1
 
 ## How to run
-1. Execute command `git clone https://github.com/Ilvondir/www-campfire`.
+1. Execute command `git clone https://github.com/Ilvondir/campfire`.
 2. Open `index.html` at web browser.
 
 ## First Look
