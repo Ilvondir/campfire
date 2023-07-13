@@ -1,0 +1,153 @@
+@mixin centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin sizing($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin positioning($type, $top, $left) {
+    position: $type;
+    top: $top;
+    left: $left;
+}
+
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    @include centering;
+}
+
+.buttonDiv {
+    @include sizing(14vmin, 8vmin);
+    @include positioning(absolute, 0, 0);
+    @include centering;
+}
+
+.offButton, .onButton {
+    @include sizing(10vmin, 4vmin);
+    background-color: #FFFFFF;
+    border-radius: 2vmin;
+}
+
+.circle {
+    @include positioning(relative, 0.5vmin, 0.5vmin);
+    @include sizing(3vmin, 3vmin);
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0 0 1vmin #888888;
+}
+
+.sun {
+    @include sizing(30vmin, 30vmin);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 100%;
+    background-color: yellow;
+}
+
+.container {
+    position: absolute;
+    @include sizing(60vmin, 50vh);
+    z-index: 1000;
+}
+
+.fire {
+    @include sizing(21vmin, 14vmin);
+    background-color: orange;
+    border-radius: 4vmin;
+    left: 19vmin;
+    bottom: 15vmin;
+    position: absolute;
+    z-index: 1000;
+}
+
+.ground {
+    @include sizing(100vw, 36vh);
+    @include positioning(absolute, 64vh, 0);
+    z-index: 0;
+    background-color: green;
+}
+
+.glow {
+    @include sizing(100%, 100%);
+    border-radius: 100%;
+    z-index: 9999;
+    background-image: radial-gradient(yellow 30%, rgba(255,255,0,0) 70%);
+    opacity: 0.2;
+    display: none;
+}
+
+@mixin firewood {
+    position: absolute;
+    bottom: 0;
+    width: 10vmin;
+    border-radius: 4vmin;
+}
+
+.firewood:nth-child(1) {
+    @include firewood;
+    background-color: #5F1F00;
+    height: 25vmin;
+    left: 15vmin;
+    transform: rotate(50deg);
+}
+
+.firewood:nth-child(2) {
+    @include firewood;
+    background-color: #361300;
+    height: 30vmin;
+    left: 35vmin;
+    bottom: -3vmin;
+    transform: rotate(-60deg);
+}
+
+.firewood:nth-child(3) {
+    @include firewood;
+    background-color: #710004;
+    height: 22vmin;
+    left: 25vmin;
+    transform: rotate(-5deg);
+}
+
+@mixin flame {
+    @include sizing(10vmin, 6vmin);
+    border-radius: 4vmin;
+    bottom: 20vmin;
+    position: absolute;
+}
+
+@for $i from 5 through 16 {
+
+    .flame:nth-child(#{$i}) {
+        @include flame;
+
+
+        @if $i%3==2 {
+            left: 19vmin;
+        }
+        @else if $i%3==0 {
+            left: 24vmin;
+        }
+        @else {
+            left: 29vmin;
+        }
+
+
+        @if $i>=5 and $i<=8 {
+            background-color: yellow;
+        } @else if $i>=9 and $i<=12 {
+            background-color: red;
+        } @else if $i>=13 and $i<=16 {
+            background-color: orange;
+        }
+    }
+
+}
