@@ -1,5 +1,5 @@
 # Campfire Animation
-Website presenting an animation of a burning fire. Anime.js and JQuery were used to create this project. To define the styles for this animation SCSS was used.
+Website presenting an animation of a burning fire. Anime.js and JQuery were used to create this project. To define the styles for this animation SCSS was used. Thanks to the button in the upper left corner of the screen, we can change the time of day.
 
 ## Used Tools
 - HTML 5
