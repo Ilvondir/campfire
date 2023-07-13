@@ -1,9 +1,9 @@
 # Campfire Animation
-Website presenting an animation of a burning fire. Anime.js and JQuery were used to create this project.
+Website presenting an animation of a burning fire. Anime.js and JQuery were used to create this project. To define the styles for this animation SCSS was used.
 
 ## Used Tools
 - HTML 5
-- CSS 3
+- SCSS 1.63.6
 - JavaScript ES6
 - JQuery 3.6.0
 - Anime.js 3.0.1
